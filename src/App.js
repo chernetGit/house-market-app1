@@ -14,6 +14,7 @@ import CreateListing from './pages/CreateListing'
 import Listing from './pages/Listing'
 import Contact from './pages/Contact'
 import Swiper from './Swiper'
+import EditListing from './pages/EditListing'
 function App() {
   return (
     // <div>
@@ -32,15 +33,13 @@ function App() {
           <Route path='/sign-up' element={<SignUp />} />
           <Route path='/forgot-password' element={<ForgotPassword />} />
           <Route path='/create-listing' element={<CreateListing />} />
+          <Route path='/edit-listing/:listingId' element={<EditListing />} />
           {/* <Route path='/*' element={<Error />} /> */}
           <Route
             path='/category/:categoryName/:listingId'
             element={<Listing />}
           />
-          <Route
-            path='/contact/:landlordId'
-            element={<Contact />}
-          />
+          <Route path='/contact/:landlordId' element={<Contact />} />
         </Routes>
         <Navbar />
       </Router>

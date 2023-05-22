@@ -7,11 +7,15 @@ function Explore() {
   return (
     <div className='explore'>
       <header>
+        <center>
+          <h1>House Market Place</h1>
+        </center>
+        <br />
         <p className='pageHeader'>Explore</p>
       </header>
       <main>
         {/* Slider */}
-        <HomeSlider/>
+        <HomeSlider />
         <p className='exploreCategoryHeading'>Categories</p>
         <div className='exploreCategories'>
           <Link to='/category/rent'>
